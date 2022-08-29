@@ -1,0 +1,4 @@
+name: LuisTakeEssentialsIX
+version: 1.2.1
+main: luistakeessentialsix.luistakeessentialsix.LuisTakeEssentialsIX
+api-version: 1.16
