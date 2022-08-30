@@ -12,7 +12,7 @@ public final class LuisTakeEssentialsIX extends JavaPlugin {
         // Plugin startup logic
         Bukkit.getLogger().info("[LuisTakeEssentialsIX] Plugin Enabled");
 
-        // Invokes the block-place handlers
+        // Invokes the torch handlers
         new TorchHandler(this);
         new WallTorchHandler(this);
     }

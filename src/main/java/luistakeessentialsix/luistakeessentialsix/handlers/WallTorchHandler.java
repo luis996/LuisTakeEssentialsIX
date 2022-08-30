@@ -17,11 +17,9 @@ public class WallTorchHandler implements Listener {
     @EventHandler
     public void onWallTorchPlace(BlockPlaceEvent event) {
         Block block = event.getBlock();
-
-        if (block.getType() != Material.WALL_TORCH) {
-            return;
+        if (block.getType() == Material.WALL_TORCH) {
+            block.setType(Material.GLOWSTONE);
+            Msg.send(event.getPlayer(), "Torch disabled due to headless piston exploit.");
         }
-        event.setCancelled(true);
-        Msg.send(event.getPlayer(), "Torches are forbidden because of exploit and, are UGLY!, use glowstone.");
     }
 }
