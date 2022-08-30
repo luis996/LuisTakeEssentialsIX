@@ -21,7 +21,9 @@ public class WallTorchHandler implements Listener {
             return;
         }
 
-        block.setType(Material.GLOWSTONE);
-        Msg.send(event.getPlayer(), "Torch disabled due to headless piston exploit.");
+        if (!event.getPlayer().hasPermission("lteix.bypass.torch")) {
+            block.setType(Material.GLOWSTONE);
+            Msg.send(event.getPlayer(), "Torch disabled due to headless piston exploit.");
+        }
     }
 }
