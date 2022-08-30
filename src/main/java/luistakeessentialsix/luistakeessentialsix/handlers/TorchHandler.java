@@ -17,9 +17,11 @@ public class TorchHandler implements Listener {
     @EventHandler
     public void onTorchPlace(BlockPlaceEvent event) {
         Block block = event.getBlock();
-        if (block.getType() == Material.TORCH) {
-            block.setType(Material.GLOWSTONE);
-            Msg.send(event.getPlayer(), "Torch disabled due to headless piston exploit.");
+        if (block.getType() != Material.TORCH) {
+            return;
         }
+
+        block.setType(Material.GLOWSTONE);
+        Msg.send(event.getPlayer(), "Torch disabled due to headless piston exploit.");
     }
 }
