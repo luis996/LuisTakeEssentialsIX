@@ -1,5 +1,6 @@
 package luistakeessentialsix.luistakeessentialsix;
 
+import luistakeessentialsix.luistakeessentialsix.commands.Fly;
 import luistakeessentialsix.luistakeessentialsix.handlers.TorchHandler;
 import luistakeessentialsix.luistakeessentialsix.handlers.WallTorchHandler;
 import org.bukkit.Bukkit;
@@ -11,6 +12,8 @@ public final class LuisTakeEssentialsIX extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         Bukkit.getLogger().info("[LuisTakeEssentialsIX] Plugin Enabled");
+        // register the commands
+        getCommand("fly").setExecutor(new Fly());
 
         // Invokes the torch handlers
         new TorchHandler(this);

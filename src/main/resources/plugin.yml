@@ -2,3 +2,8 @@ name: LuisTakeEssentialsIX
 version: 0.4.0-SNAPSHOT
 main: luistakeessentialsix.luistakeessentialsix.LuisTakeEssentialsIX
 api-version: 1.16
+commands:
+  fly:
+    description: Enables the fly mode of the player who did run it.
+    usage: /fly
+    aliases: [flight, togglefly]
