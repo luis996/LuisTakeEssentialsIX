@@ -6,7 +6,7 @@
 
     <groupId>LuisTakeEssentialsIX</groupId>
     <artifactId>LuisTakeEssentialsIX</artifactId>
-    <version>0.4.0-SNAPSHOT</version>
+    <version>0.6.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>LuisTakeEssentialsIX</name>
@@ -39,7 +39,7 @@
                         </goals>
                         <configuration>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
-                            <outputFile>C:\Users\USUARIO\Desktop\Projects\LTEIX\out\artifacts\LITEX_jar\LITEX-0.5.0-SNAPSHOT.jar</outputFile>
+                            <outputFile>C:\Users\USUARIO\Desktop\Projects\LTEIX\out\artifacts\LITEX_jar\LITEX-0.6.0-SNAPSHOT.jar</outputFile>
                         </configuration>
                     </execution>
                 </executions>

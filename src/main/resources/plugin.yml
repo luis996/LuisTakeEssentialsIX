@@ -7,3 +7,7 @@ commands:
     description: Enables the fly mode of the player who did run it.
     usage: /fly
     aliases: [flight, togglefly]
+  autobread:
+    description: Displays instructions of how to enable AutoBread.
+    usage: /autobread
+    aliases: [breadonconnect, joinbread]
