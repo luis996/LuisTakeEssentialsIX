@@ -1,5 +1,5 @@
 name: LuisTakeEssentialsIX
-version: 0.4.0-SNAPSHOT
+version: 0.6.0-SNAPSHOT
 main: luistakeessentialsix.luistakeessentialsix.LuisTakeEssentialsIX
 api-version: 1.16
 commands:

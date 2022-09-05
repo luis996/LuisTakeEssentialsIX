@@ -10,6 +10,12 @@ public class AutoBread implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String [] args) {
 
+        if (!(sender instanceof Player)) {
+            Msg.send(sender, "[!] Everyone with permission lteix.features.autobread will get 16 breads every connect [!]");
+            Msg.send(sender, "[!] This feature requires LuckPerms plugin [!]");
+            return true;
+        }
+
         Player player = (Player) sender;
 
         Msg.send(player, "[!] Everyone with permission lteix.features.autobread will get 16 breads every connect [!]");
