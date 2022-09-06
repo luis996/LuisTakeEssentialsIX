@@ -2,6 +2,7 @@ package luistakeessentialsix.luistakeessentialsix;
 
 import luistakeessentialsix.luistakeessentialsix.commands.AutoBread;
 import luistakeessentialsix.luistakeessentialsix.commands.Fly;
+import luistakeessentialsix.luistakeessentialsix.commands.Heal;
 import luistakeessentialsix.luistakeessentialsix.handlers.PlayerHandler;
 import luistakeessentialsix.luistakeessentialsix.handlers.TorchHandler;
 import luistakeessentialsix.luistakeessentialsix.handlers.WallTorchHandler;
@@ -17,6 +18,7 @@ public final class LuisTakeEssentialsIX extends JavaPlugin {
         // register the commands
         getCommand("fly").setExecutor(new Fly());
         getCommand("autobread").setExecutor(new AutoBread());
+        getCommand("heal").setExecutor(new Heal());
 
         // Invokes the EventHandlers
         new TorchHandler(this);
