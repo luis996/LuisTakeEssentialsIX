@@ -1,5 +1,5 @@
 name: LuisTakeEssentialsIX
-version: 0.7.0-SNAPSHOT
+version: 0.7.0
 main: luistakeessentialsix.luistakeessentialsix.LuisTakeEssentialsIX
 api-version: 1.16
 commands:
@@ -15,3 +15,6 @@ commands:
     description: Fills the heal of the user who run the command.
     usage: /heal
     aliases: [healme]
+  lteix:
+    description: Opens LTEIX custom menu.
+    usage: /lteix
