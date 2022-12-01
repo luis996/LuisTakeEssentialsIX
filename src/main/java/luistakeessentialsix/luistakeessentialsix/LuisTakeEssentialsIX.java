@@ -1,9 +1,6 @@
 package luistakeessentialsix.luistakeessentialsix;
 
-import luistakeessentialsix.luistakeessentialsix.commands.AutoBread;
-import luistakeessentialsix.luistakeessentialsix.commands.Fly;
-import luistakeessentialsix.luistakeessentialsix.commands.Heal;
-import luistakeessentialsix.luistakeessentialsix.commands.Lteix;
+import luistakeessentialsix.luistakeessentialsix.commands.*;
 import luistakeessentialsix.luistakeessentialsix.handlers.PlayerHandler;
 import luistakeessentialsix.luistakeessentialsix.handlers.TorchHandler;
 import luistakeessentialsix.luistakeessentialsix.handlers.WallTorchHandler;
@@ -16,11 +13,12 @@ public final class LuisTakeEssentialsIX extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         Bukkit.getLogger().info("[LuisTakeEssentialsIX] Plugin Enabled");
+
         // register the commands
         getCommand("fly").setExecutor(new Fly());
-        getCommand("autobread").setExecutor(new AutoBread());
         getCommand("heal").setExecutor(new Heal());
         getCommand("lteix").setExecutor(new Lteix(this));
+        getCommand("healthtroll").setExecutor(new healthTroll());
 
         // Invokes the EventHandlers
         new TorchHandler(this);

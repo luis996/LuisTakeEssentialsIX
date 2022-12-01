@@ -18,7 +18,7 @@ public class PlayerHandler implements Listener {
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
-        if (!player.hasPermission("lteix.features.autobread")) {
+        if (!player.hasPermission("lteix.features.autoitem")) {
             return;
         }
 
